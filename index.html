@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Super Javascript Quiz</title>
+   <style>
+ aside {margin-top -10px; }
+ 
+ section {display: none; }
+
+ section ul { 
+   list-style-type: none; 
+   margin-left: -48px;
+   }
+ section ul li {font-size: 24px; font-family: sans-serif, monospace;}
+
+ button {
+   font-size: 16px;
+   color: white;
+   background-color: teal;
+   border: 2px solid black;
+   }
+
+ button:active {
+   background-color: red;
+   }
+
+ #questitem button {
+   width:200px;
+   }
+
+   </style>
+</head>
+<body>
+  <header>
+   <font size=16><button>View Scores</button></font>
+   <font size=16 style="float:right;"></font>
+  </header>
+<main style="text-align:center;">
+      <h1>Super JavaScript Quiz</h1>
+
+  <aside>
+      <h3>60 seconds, 4 questions!<br/>Wrong answers reduce timer!<br/>Ready?</h3>
+        <button id="startButton">Start</button>
+  </aside>
+
+  <section id="questitem">
+      <h3 id="questheader">Question</h3>
+        <button id="picka">A</button><br/><br/>
+        <button id="pickb">B</button><br/><br/>
+        <button id="pickc">C</button><br/><br/>
+        <button id="pickd">D</button><br/><br/>
+  </section>
+
+  <section>
+      <h3>Final Score</h3>
+      <p>Points: </p>
+      <p>Bonus: </p>
+      <p>Total: </p>
+      <input placeholder="Name" size=3 maxlength=3></input> &nbsp;
+        <button id="addscoreButton">Submit Score</button>
+  </section>
+
+<section>
+      <h3>All Scores</h3>
+      <ul></ul>
+        <button id="returnButton">Ok</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="clearButton">Clear</button>
+
+  </section>
+
+
+
+</main> 
+
+
+<footer></footer>
+
+<script src="assets/script.js"></script>
+</body></html>
